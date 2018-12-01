@@ -1,0 +1,61 @@
+@import "./breakpoint.scss";
+
+@mixin title-font-size {
+    @include breakpoint(mobile) {
+        font-size: 26px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 30px;
+    }
+    @include breakpoint(desktop) {
+        font-size: 32px;
+    }
+}
+
+@mixin header-font-size {
+    @include breakpoint(mobile) {
+        font-size: 22px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 24px;
+    }
+    @include breakpoint(desktop) {
+        font-size: 26px;
+    }
+}
+
+@mixin sub-header-font-size {
+    @include breakpoint(mobile) {
+        font-size: 20px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 22px;
+    }
+    @include breakpoint(desktop) {
+        font-size: 22px;
+    }
+}
+
+@mixin default-font-size {
+    @include breakpoint(mobile) {
+        font-size: 18px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 18px;
+    }
+    @include breakpoint(desktop) {
+        font-size: 18px;
+    }
+}
+
+@mixin sub-font-size {
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+    @include breakpoint(tablet) {
+        font-size: 16px;
+    }
+    @include breakpoint(desktop) {
+        font-size: 16px;
+    }
+}

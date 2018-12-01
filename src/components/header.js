@@ -1,15 +1,18 @@
 import { Link } from "gatsby";
 import React from "react";
+import HeaderIcon from "./images/headerIcon";
+import styles from "./header.module.scss";
 
 export default function Header({ siteTitle }) {
     return (
-        <div style={{ background: "rebeccapurple", marginBottom: "1.45rem" }}>
-            <div style={{ margin: "0 auto", maxWidth: 960, padding: "1.45rem 1.0875rem" }}>
-                <h1 style={{ margin: 0 }}>
-                    <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                        {siteTitle}
-                    </Link>
-                </h1>
+        <div className={styles.header}>
+            <div className={styles.container}>
+                <Link to="/" className={styles.homeLink}>
+                    <div className={styles.headerIcon}>
+                        <HeaderIcon />
+                    </div>
+                    <h1>{siteTitle}</h1>
+                </Link>
             </div>
         </div>
     );

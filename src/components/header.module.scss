@@ -1,0 +1,45 @@
+@import "./colors.scss";
+@import "./fontSizes.scss";
+
+.header {
+    @include title-font-size;
+    width: 100%;
+    background-color: $color-1;
+    height: 2em;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    @include breakpoint(mobile) {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    @include breakpoint(tablet) {
+        width: 752px;
+    }
+    @include breakpoint(desktop) {
+        width: 946px;
+    }
+    @include breakpoint(desktop-xl) {
+        width: 1248px;
+    }
+}
+
+.homeLink {
+    text-decoration: none;
+    color: $color-2;
+
+    display: flex;
+    align-items: center;
+}
+
+.headerIcon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
