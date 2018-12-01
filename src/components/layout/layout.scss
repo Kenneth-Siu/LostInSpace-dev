@@ -1,4 +1,4 @@
-@import "../breakpoint.scss";
+@import "../responsive.scss";
 @import "./cssReset.scss";
 @import "../fontSizes.scss";
 
@@ -12,22 +12,10 @@ html {
 }
 
 .layout-page-container {
-    @include breakpoint(mobile) {
-        width: 100%;
+    @include responsive(width, 100%, $medium-container-width, $large-container-width, $huge-container-width);
+    @include responsive (margin, 0, 0 auto);
+    @include breakpoint(small) {
         padding-left: 16px;
         padding-right: 16px;
-        margin: 0;
-    }
-    @include breakpoint(tablet) {
-        width: 736px;
-        margin: 0 auto;
-    }
-    @include breakpoint(desktop) {
-        width: 930px;
-        margin: 0 auto;
-    }
-    @include breakpoint(desktop-xl) {
-        width: 1248px;
-        margin: 0 auto;
     }
 }

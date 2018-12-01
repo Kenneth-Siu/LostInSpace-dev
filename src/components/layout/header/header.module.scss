@@ -1,5 +1,6 @@
 @import "../../colors.scss";
 @import "../../fontSizes.scss";
+@import "../../responsive.scss";
 
 .header {
     @include title-font-size;
@@ -14,19 +15,10 @@
 }
 
 .container {
-    @include breakpoint(mobile) {
-        width: 100%;
+    @include responsive(width, 100%, $medium-container-width, $large-container-width, $huge-container-width);
+    @include breakpoint(small) {
         padding-left: 16px;
         padding-right: 16px;
-    }
-    @include breakpoint(tablet) {
-        width: 752px;
-    }
-    @include breakpoint(desktop) {
-        width: 946px;
-    }
-    @include breakpoint(desktop-xl) {
-        width: 1248px;
     }
 }
 
