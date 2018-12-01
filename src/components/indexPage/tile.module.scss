@@ -1,0 +1,85 @@
+@import "../responsive.scss";
+@import "../colors.scss";
+
+$margin: 16px;
+
+.tile {
+    position: relative;
+    display: inline-block;
+    background-color: black;
+
+    margin-bottom: $margin;
+
+    @include responsive(
+        width,
+        100%,
+        ($medium-container-width - $margin * 2) / 2,
+        ($large-container-width - $margin * 3) / 3,
+        ($huge-container-width - $margin * 3) / 3);
+
+    @include responsive(
+        padding-bottom,
+        100%,
+        ($medium-container-width - $margin * 2) / 2,
+        ($large-container-width - $margin * 3) / 3,
+        ($huge-container-width - $margin * 3) / 3);
+
+    @include breakpoint(small) {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+.name {
+    width: 95%;
+    color: $color-2;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.25s, top 0.25s, text-decoration 0.25s;
+}
+
+.description {
+    font-size: 18px;
+    width: 90%;
+    font-style: italic;
+    visibility: hidden;
+    color: darken($color-2, 10%);
+    opacity: 0;
+    transition: opacity 0.25s;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tile:hover .text {
+    .name {
+        top: 48%;
+        transform: translate(-50%, -100%);
+        text-decoration: underline;
+    }
+
+    .description {
+        visibility: visible;
+        opacity: 1;
+    }
+}
