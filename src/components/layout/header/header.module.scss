@@ -1,5 +1,5 @@
-@import "./colors.scss";
-@import "./fontSizes.scss";
+@import "../../colors.scss";
+@import "../../fontSizes.scss";
 
 .header {
     @include title-font-size;

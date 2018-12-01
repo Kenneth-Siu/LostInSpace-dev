@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import HeaderIcon from "./images/headerIcon";
+import HeaderIcon from "../../images/headerIcon";
 import styles from "./header.module.scss";
 
 export default function Header({ siteTitle }) {

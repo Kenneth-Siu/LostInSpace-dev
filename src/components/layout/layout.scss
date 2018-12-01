@@ -1,6 +1,6 @@
-@import "./breakpoint.scss";
+@import "../breakpoint.scss";
 @import "./cssReset.scss";
-@import "./fontSizes.scss";
+@import "../fontSizes.scss";
 
 html {
     @include default-font-size;
