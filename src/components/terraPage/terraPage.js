@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../layout/layout";
-import CardImageGallery from "./cardImageGallery";
-import DraftSimulator from "./draftSimulator";
+import CardImageGallery from "./cardImageGallery/cardImageGallery";
+import DraftSimulator from "./draftSimulator/draftSimulator";
 import Tabs from "./tabs";
 
 export default function TerraPage() {

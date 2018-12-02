@@ -1,6 +1,6 @@
 import React from "react";
-import cardList from "./cardList";
-import { COLOR } from "./card";
+import cardList from "../cardList";
+import { COLOR } from "../card";
 import FilterButtons, { FILTER } from "./filterButtons";
 import styles from "./cardImageGallery.module.scss";
 
@@ -18,7 +18,7 @@ export default class CardImageGallery extends React.Component {
                 <FilterButtons filter={this.state.filter} onFilterChange={filter => this.changeFilter(filter)} />
                 <div className={styles.cardImagesContainer}>
                     {this.getFilteredCards().map(card => (
-                        <div className={styles.cardContainer} key={card.name}>
+                        <div className={styles.cardContainer} key={card.id}>
                             <img src={card.imageUrl} className={styles.card} alt={card.name} />
                             <div className={styles.cardName}>{card.name}</div>
                         </div>
