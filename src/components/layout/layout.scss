@@ -1,10 +1,12 @@
 @import "../responsive.scss";
 @import "./cssReset.scss";
 @import "../fontSizes.scss";
+@import "../colors.scss";
 
 html {
     @include default-font-size;
     font-family: Roboto, Arial, sans-serif;
+    background-color: $color-2;
 }
 
 * {

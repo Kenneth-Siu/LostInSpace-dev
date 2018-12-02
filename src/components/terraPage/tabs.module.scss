@@ -1,0 +1,54 @@
+@import "../fontSizes.scss";
+@import "../colors.scss";
+
+.tabs {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    @include header-font-size;
+    flex-grow: 1;
+}
+
+.tabButton {
+    border: 1px $color-3 solid;
+    border-bottom: none;
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    background-color: $color-2;
+    outline: none;
+	cursor: pointer;
+    padding: 1rem 1.25rem;
+    margin: 0 0.25rem;
+
+    &:hover {
+        background-color: darken($color-2, 5%);
+    }
+
+    &:active {
+        background-color: darken($color-2, 10%);
+    }
+
+    &.selected {
+        background-color: $color-2;
+        border-bottom: 1px $color-2 solid;
+        margin-bottom: -1px;
+    }
+}
+
+.content {
+    border-top: 1px $color-3 solid;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.tabContent:not(.selected) {
+    display: none;
+}
