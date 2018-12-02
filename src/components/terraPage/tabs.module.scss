@@ -2,9 +2,10 @@
 @import "../colors.scss";
 @import "../button.scss";
 
-.tabs {
+.tabsBar {
     padding: 0 1rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -13,9 +14,15 @@
     flex-grow: 1;
 }
 
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
 .tabButton {
     @include button;
-
+    flex-grow: 1;
     border: 1px $color-3 solid;
     border-bottom: none;
     border-radius: 0;

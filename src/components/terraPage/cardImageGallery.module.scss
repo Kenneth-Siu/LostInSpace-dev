@@ -1,0 +1,20 @@
+@import "../responsive.scss";
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cardContainer {
+    margin-bottom: 1rem;
+}
+
+.card {
+    @include responsive(height, 418.4px, 418.4px, 418.4px, 523px);
+}
+
+.cardName {
+    text-align: center;
+    margin: 0.5rem 0;
+}

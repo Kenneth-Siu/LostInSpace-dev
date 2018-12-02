@@ -12,9 +12,9 @@ export default class Tabs extends React.Component {
     render() {
         return (
             <>
-                <div className={styles.tabs}>
+                <div className={styles.tabsBar}>
                     <h2 className={styles.header}>{this.props.header}</h2>
-                    <div>
+                    <div className={styles.tabs}>
                         {this.props.content.map((tab, index) => (
                             <button
                                 className={`${styles.tabButton} ${

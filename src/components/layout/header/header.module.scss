@@ -16,10 +16,7 @@
 
 .container {
     @include responsive(width, 100%, $medium-container-width, $large-container-width, $huge-container-width);
-    @include breakpoint(small) {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+    padding: 0 1rem;
 }
 
 .homeLink {

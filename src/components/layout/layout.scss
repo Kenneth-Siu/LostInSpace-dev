@@ -13,8 +13,4 @@ html {
 .layout-page-container {
     @include responsive(width, 100%, $medium-container-width, $large-container-width, $huge-container-width);
     @include responsive (margin, 0, 0 auto);
-    @include breakpoint(small) {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 }

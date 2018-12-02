@@ -1,6 +1,6 @@
-$medium-container-width: 736px;
-$large-container-width: 930px;
-$huge-container-width: 1248px;
+$medium-container-width: 768px;
+$large-container-width: 960px;
+$huge-container-width: 1280px;
 
 @mixin breakpoint($class) {
     @if $class == small {
