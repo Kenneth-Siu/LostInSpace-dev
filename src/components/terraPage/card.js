@@ -1,7 +1,7 @@
 import { withPrefix } from 'gatsby'
 import uuid from "uuid";
 
-export const COLORS = Object.freeze({
+export const COLOR = Object.freeze({
     WHITE: "W",
     BLUE: "U",
     BLACK: "B",
