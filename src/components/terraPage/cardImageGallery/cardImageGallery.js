@@ -41,26 +41,22 @@ export default class CardImageGallery extends React.Component {
                 case FILTER.NONE:
                     return true;
                 case FILTER.GOLD:
-                    return card.colors.length > 1;
+                    return card.color.length > 1;
                 case FILTER.COLORLESS:
-                    return card.colors.length === 0;
+                    return card.color.length === 0;
                 case FILTER.WHITE:
-                    return this.isColor(card.colors, COLOR.WHITE);
+                    return card.color === COLOR.WHITE;
                 case FILTER.BLUE:
-                    return this.isColor(card.colors, COLOR.BLUE);
+                return card.color === COLOR.BLUE;
                 case FILTER.BLACK:
-                    return this.isColor(card.colors, COLOR.BLACK);
+                return card.color === COLOR.BLACK;
                 case FILTER.RED:
-                    return this.isColor(card.colors, COLOR.RED);
+                return card.color === COLOR.RED;
                 case FILTER.GREEN:
-                    return this.isColor(card.colors, COLOR.GREEN);
+                return card.color === COLOR.GREEN;
                 default:
                     return true;
             }
         });
-    }
-
-    isColor(cardColors, color) {
-        return cardColors.length === 1 && cardColors[0] === color;
     }
 }

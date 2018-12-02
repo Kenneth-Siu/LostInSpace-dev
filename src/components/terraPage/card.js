@@ -9,11 +9,18 @@ export const COLOR = Object.freeze({
     GREEN: "G"
 });
 
+export const RARITY = Object.freeze({
+    MYTHIC: "M",
+    RARE: "R",
+    UNCOMMON: "U",
+    COMMON: "C"
+});
+
 export default class Card {
-    constructor(id, name, colorString, castingCost, imageName, rarity, notes, rulesText) {
+    constructor(id, name, color, castingCost, imageName, rarity, notes, rulesText) {
         this.id = id;
         this.name = name;
-        this.colors = getColor(colorString);
+        this.color = color;
         this.cmc = getCmc(castingCost);
         this.imageUrl = withPrefix(`/card-images/${imageName}.png`);
         this.rarity = rarity;
@@ -25,10 +32,6 @@ export default class Card {
         this.uuid = uuid.v4();
         return this;
     }
-}
-
-function getColor(colorString) {
-    return colorString.split("");
 }
 
 function getCmc(castingCost) {
