@@ -1,0 +1,18 @@
+@import "./fontSizes.scss";
+
+@mixin button {
+    border: 1px $color-3 solid;
+    border-radius: 0.5rem;
+    background-color: $color-2;
+    outline: none;
+    cursor: pointer;
+    @include default-font-size;
+
+    &:hover {
+        background-color: darken($color-2, 5%);
+    }
+
+    &:active {
+        background-color: darken($color-2, 10%);
+    }
+}

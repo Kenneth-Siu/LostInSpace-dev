@@ -7,10 +7,7 @@ html {
     @include default-font-size;
     font-family: Roboto, Arial, sans-serif;
     background-color: $color-2;
-}
-
-* {
-    box-sizing: border-box;
+    color: $color-1;
 }
 
 .layout-page-container {
