@@ -1,0 +1,5 @@
+@import "../../responsive.scss";
+
+.card {
+    @include responsive(height, 418.4px, 418.4px, 418.4px, 523px);
+}

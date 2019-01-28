@@ -4,6 +4,7 @@ import Player from "./player";
 import CardPiles from "./cardPiles";
 import CardPreview from "./cardPreview";
 import CardPick from "./cardPick";
+import styles from "./draftSimulator.module.scss";
 
 export default class DraftSimulator extends React.Component {
     constructor(props) {
@@ -36,30 +37,17 @@ export default class DraftSimulator extends React.Component {
     }
 
     render() {
-        const suggestedPick =
-            this.state.pack.length &&
-            this.state.pack.reduce((accumulator, currentValue) => {
-                if (currentValue.rating >= accumulator.rating) return currentValue;
-                return accumulator;
-            });
         return (
             <div className="draft-sim">
                 {this.state.pack.length > 0 && (
-                    <div className="booster-pack">
+                    <div className={styles.boosterPack}>
                         <h3>
                             Pack {this.state.packNumber} Pick {15 - this.state.pack.length}{" "}
                             <small>Click a card to add it to your deck</small>
                         </h3>
-                        <div className="cards">
-                            {this.state.pack.map(card => this.getCardPickElement(card, card === suggestedPick))}
+                        <div className={styles.cards}>
+                            {this.state.pack.map(card => this.getCardPickElement(card))}
                         </div>
-                    </div>
-                )}
-                {this.state.pack.length > 0 && (
-                    <div className="suggest-pick">
-                        <button onClick={() => this.toggleSuggestions()}>
-                            {this.state.showAIRatings ? "Hide suggestion" : "Suggest Pick"}
-                        </button>
                     </div>
                 )}
                 <h3>
@@ -160,7 +148,6 @@ export default class DraftSimulator extends React.Component {
         for (const computerPlayer of this.computerPlayers) {
             computerPlayer.computerPick();
         }
-        this.hideSuggestions();
         this.humanPlayer.passPack(this.passDirection);
         for (const computerPlayer of this.computerPlayers) {
             computerPlayer.passPack(this.passDirection);
@@ -178,18 +165,6 @@ export default class DraftSimulator extends React.Component {
         this.setState({
             computerColorPreferences: this.computerPlayers.map(computerPlayer => computerPlayer.getColorPreferences()),
             computerPicks: this.computerPlayers.map(computerPlayer => this.pilify(computerPlayer.picks))
-        });
-    }
-
-    toggleSuggestions() {
-        this.setState({
-            showAIRatings: !this.state.showAIRatings
-        });
-    }
-
-    hideSuggestions() {
-        this.setState({
-            showAIRatings: false
         });
     }
 
@@ -233,7 +208,7 @@ export default class DraftSimulator extends React.Component {
         });
     }
 
-    getCardPickElement(card, isSuggested) {
+    getCardPickElement(card) {
         return (
             <CardPick
                 key={card.card.uuid}
@@ -241,9 +216,6 @@ export default class DraftSimulator extends React.Component {
                     this.makePick(card.card);
                 }}
                 imageUrl={card.card.imageUrl}
-                showAIRatings={this.state.showAIRatings}
-                rating={card.rating}
-                isSuggestedPick={isSuggested}
             />
         );
     }
