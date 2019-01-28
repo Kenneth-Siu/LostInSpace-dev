@@ -27,7 +27,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "start": "npm run develop",
+    "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {},
