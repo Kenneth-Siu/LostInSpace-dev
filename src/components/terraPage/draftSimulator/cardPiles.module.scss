@@ -1,0 +1,32 @@
+$maxPileSize: 236;
+
+.cardPiles {
+    display: flex;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+@for $index from 0 through $maxPileSize {
+    .sizeOfLargestPile#{$index} {
+        padding-bottom: 5.81% + $index * 5.81%;
+    }
+}
+
+.pile {
+    flex-grow: 1;
+    position: relative;
+    padding-bottom: 5.81%;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+@for $index from 0 through $maxPileSize {
+    &.pileIndex#{$index} {
+        top: $index * 100%;
+    }
+}

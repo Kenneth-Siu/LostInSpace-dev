@@ -17,18 +17,10 @@ export default class DraftSimulator extends React.Component {
                 return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
             }),
             packNumber: 1,
-            picks: this.pilify([]),
-            sideboard: this.pilify([]),
+            picks: [],
+            sideboard: [],
             computerColorPreferences: this.computerPlayers.map(player => player.getColorPreferences()),
-            computerPicks: [
-                this.pilify([]),
-                this.pilify([]),
-                this.pilify([]),
-                this.pilify([]),
-                this.pilify([]),
-                this.pilify([]),
-                this.pilify([])
-            ],
+            computerPicks: [[], [], [], [], [], [], []],
             showAIRatings: false,
             showAIPicks: false,
             hoveredCardUrl: null
@@ -38,40 +30,37 @@ export default class DraftSimulator extends React.Component {
 
     render() {
         return (
-            <div className="draft-sim">
+            <div className={styles.draftSim}>
                 {this.state.pack.length > 0 && (
                     <div className={styles.boosterPack}>
-                        <h3>
+                        <h3 className={styles.header}>
                             Pack {this.state.packNumber} Pick {15 - this.state.pack.length}{" "}
                             <small>Click a card to add it to your deck</small>
                         </h3>
-                        <div className={styles.cards}>
-                            {this.state.pack.map(card => this.getCardPickElement(card))}
-                        </div>
+                        <div className={styles.cards}>{this.state.pack.map(card => this.getCardPickElement(card))}</div>
                     </div>
                 )}
-                <h3>
-                    Deck ({this.state.picks.reduce((total, pile) => total + pile.length, 0)}){" "}
-                    <small>Click a card to move it to your sideboard</small>
+                <h3 className={styles.header}>
+                    Deck ({this.state.picks.length}) <small>Click a card to move it to your sideboard</small>
                 </h3>
                 <CardPiles
-                    piles={this.state.picks}
+                    cards={this.state.picks}
                     onClick={card => this.moveFromPicksToSideboard(card)}
                     onMouseEnter={card => this.handleMouseEnterPileCard(card)}
                     onMouseLeave={() => this.handleMouseLeavePileCard()}
                 />
-                <h3>
-                    Sideboard ({this.state.sideboard.reduce((total, pile) => total + pile.length, 0)}){" "}
+                <h3 className={styles.header}>
+                    Sideboard ({this.state.sideboard.length}){" "}
                     <small>Click a card to move it to your deck</small>
                 </h3>
                 <CardPiles
-                    piles={this.state.sideboard}
+                    cards={this.state.sideboard}
                     onClick={card => this.moveFromSideboardToPicks(card)}
                     onMouseEnter={card => this.handleMouseEnterPileCard(card)}
                     onMouseLeave={() => this.handleMouseLeavePileCard()}
                 />
-                <div className="toggle-ai-picks">
-                    <button onClick={() => this.toggleAIPicks()}>
+                <div className={styles.toggleAiPicksButtonContainer}>
+                    <button onClick={() => this.toggleAIPicks()} className={styles.button}>
                         {this.state.showAIPicks ? "Hide AI Picks" : "Show AI Picks"}
                     </button>
                 </div>
@@ -80,22 +69,17 @@ export default class DraftSimulator extends React.Component {
                         <div className="row" key={index}>
                             <div className="col-md-12">
                                 <h3>
-                                    AI {index}&nbsp;—&nbsp; W:{this.state.computerColorPreferences[
-                                        index
-                                    ].white.toPrecision(3)}&nbsp; U:{this.state.computerColorPreferences[
-                                        index
-                                    ].blue.toPrecision(3)}&nbsp; B:{this.state.computerColorPreferences[
-                                        index
-                                    ].black.toPrecision(3)}&nbsp; R:{this.state.computerColorPreferences[
-                                        index
-                                    ].red.toPrecision(3)}&nbsp; G:{this.state.computerColorPreferences[
-                                        index
-                                    ].green.toPrecision(3)}&nbsp;
+                                    AI {index}&nbsp;—&nbsp; W:
+                                    {this.state.computerColorPreferences[index].white.toPrecision(3)}&nbsp; U:
+                                    {this.state.computerColorPreferences[index].blue.toPrecision(3)}&nbsp; B:
+                                    {this.state.computerColorPreferences[index].black.toPrecision(3)}&nbsp; R:
+                                    {this.state.computerColorPreferences[index].red.toPrecision(3)}&nbsp; G:
+                                    {this.state.computerColorPreferences[index].green.toPrecision(3)}&nbsp;
                                 </h3>
                             </div>
                             <div className="col-md-12">
                                 <CardPiles
-                                    piles={aiPicks}
+                                    cards={aiPicks}
                                     onMouseEnter={card => this.handleMouseEnterPileCard(card)}
                                     onMouseLeave={() => this.handleMouseLeavePileCard()}
                                 />
@@ -105,42 +89,6 @@ export default class DraftSimulator extends React.Component {
                 <CardPreview url={this.state.hoveredCardUrl} />
             </div>
         );
-    }
-
-    pilify(cards) {
-        const alphetisedCards = cards.sort((a, b) => {
-            if (a < b) return -1;
-            if (a > b) return 1;
-            return 0;
-        });
-        return this.splitIntoCmcPiles(alphetisedCards).map(pile => this.sortByColor(pile));
-    }
-
-    splitIntoCmcPiles(cards) {
-        const piles = [[], [], [], [], [], [], [], []];
-        cards.forEach(card => {
-            if (card.cmc === "X" || card.cmc === 0) piles[7].push(card);
-            else if (card.cmc >= 7) piles[6].push(card);
-            else piles[card.cmc - 1].push(card);
-        });
-        return piles;
-    }
-
-    sortByColor(cards) {
-        return cards.sort((a, b) => {
-            const wubrg = "WUBRG";
-            let A, B;
-
-            if (a.color.length === 0) A = 5;
-            else if (a.color.length > 1) A = 6;
-            else A = wubrg.indexOf(a.color);
-
-            if (b.color.length === 0) B = 5;
-            else if (b.color.length > 1) B = 6;
-            else B = wubrg.indexOf(b.color);
-
-            return A - B;
-        });
     }
 
     makePick(card) {
@@ -164,7 +112,7 @@ export default class DraftSimulator extends React.Component {
         this.updatePicksState();
         this.setState({
             computerColorPreferences: this.computerPlayers.map(computerPlayer => computerPlayer.getColorPreferences()),
-            computerPicks: this.computerPlayers.map(computerPlayer => this.pilify(computerPlayer.picks))
+            computerPicks: this.computerPlayers.map(computerPlayer => computerPlayer.picks)
         });
     }
 
@@ -192,13 +140,13 @@ export default class DraftSimulator extends React.Component {
 
     updatePicksState() {
         this.setState({
-            picks: this.pilify(this.humanPlayer.picks)
+            picks: this.humanPlayer.picks
         });
     }
 
     updateSideboardState() {
         this.setState({
-            sideboard: this.pilify(this.humanPlayer.sideboard)
+            sideboard: this.humanPlayer.sideboard
         });
     }
 

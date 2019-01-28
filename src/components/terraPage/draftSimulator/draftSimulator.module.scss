@@ -1,8 +1,19 @@
+@import "../../button.scss";
+@import "../../colors.scss";
 @import "../../responsive.scss";
 
-.boosterPack {
-}
+.draftSim {}
+.boosterPack {}
 
+.header {
+    font-size: 20px;
+    margin-bottom: 16px;
+
+    small {
+        font-size: 16px;
+        color: lighten($color-1, 10%);
+    }
+}
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -12,4 +23,14 @@
         margin-bottom: 1rem;
         @include responsive(margin-bottom, 0.5rem, 0.5rem, 0.5rem, 1rem);
     }
+}
+
+.toggleAiPicksButtonContainer {
+    text-align: center;
+}
+
+.button {
+    @include button;
+    padding: 0.5rem 1rem;
+    margin: 0.15rem 0.15rem;
 }
