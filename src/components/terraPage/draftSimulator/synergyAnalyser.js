@@ -1,5 +1,16 @@
 export default class SynergyAnalyser {
     constructor(picks, pick) {
+
+        this.artifact = 0;
+        this.etb = 0;
+        this.lifegain = 0;
+        this.equipment = 0;
+        this.creatureTokens = 0;
+        this.police = 0;
+        this.evasion = 0;
+        this.flash = 0;
+
+
         this.devices = 0;
         this.deviceTokens = 0;
         this.lifeloss = 0;
@@ -37,14 +48,16 @@ export default class SynergyAnalyser {
 
     getFractionOfPotential(card) {
         let fractionOfPotentialFulfilled = 0;
+        let numberOfSynergies = 0;
 
         for (const prop in card.notes.synergies) {
             if (this[prop] === undefined) {
                 throw new Error("Missing card tag.");
             }
             fractionOfPotentialFulfilled += this[prop] / card.notes.synergies[prop];
+            numberOfSynergies++;
         }
-        return fractionOfPotentialFulfilled;
+        return Math.max(1, fractionOfPotentialFulfilled / numberOfSynergies);
     }
 
     countCards(cards) {
