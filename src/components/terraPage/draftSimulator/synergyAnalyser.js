@@ -1,28 +1,20 @@
 export default class SynergyAnalyser {
     constructor(picks, pick) {
-
         this.artifact = 0;
         this.etb = 0;
         this.lifegain = 0;
         this.equipment = 0;
         this.creatureTokens = 0;
+        this.fodder = 0;
+        this.creatureFodder = 0;
+        this.artifactFodder = 0;
         this.police = 0;
         this.evasion = 0;
         this.flash = 0;
-
-
-        this.devices = 0;
-        this.deviceTokens = 0;
-        this.lifeloss = 0;
-        this.lifegain = 0;
-        this.unitTokens = 0;
-        this.deathTrigger = 0;
-        this.etb = 0;
-        this.equipment = 0;
-        this.atarka = 0;
-        this.tactical = 0;
-        this.evasion = 0;
-        this.ramp = 0;
+        this.cheating = 0;
+        this.scry = 0;
+        this.combatTrick = 0;
+        this.mutantXeno = 0;
 
         this.totalPicks = picks.length;
         this.countCards(picks);
