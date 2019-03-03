@@ -33,6 +33,7 @@ export default class CardPiles extends React.Component {
                 onMouseLeave={() => {
                     if (this.props.onMouseLeave) this.props.onMouseLeave();
                 }}
+                key={index}
             >
                 <CardImage key={card.uuid} url={card.imageUrl} additionalClasses={styles.card + " " + styles["pileIndex" + index]} />
             </div>
