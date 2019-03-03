@@ -41,16 +41,14 @@ export default class SynergyAnalyser {
 
     getFractionOfPotential(card) {
         let fractionOfPotentialFulfilled = 0;
-        let numberOfSynergies = 0;
 
         for (const prop in card.notes.synergies) {
             if (this[prop] === undefined) {
                 throw new Error(`Missing card tag: ${prop}`);
             }
             fractionOfPotentialFulfilled += this[prop] / card.notes.synergies[prop];
-            numberOfSynergies++;
         }
-        return Math.max(1, fractionOfPotentialFulfilled / numberOfSynergies);
+        return Math.max(1, fractionOfPotentialFulfilled);
     }
 
     countCards(cards) {
