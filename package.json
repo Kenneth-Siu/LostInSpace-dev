@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "lost-in-space",
+  "description": "Personal website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Kenneth Siu <kennethsiu11@gmail.com>",
   "dependencies": {
     "gatsby": "^2.1.19",
     "gatsby-image": "^2.0.30",
@@ -28,7 +28,6 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
@@ -40,6 +39,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Kenneth-Siu/LostInSpace"
   }
 }
