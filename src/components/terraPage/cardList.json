@@ -38,7 +38,7 @@
 "notes": {
 "power": 25
 },
-"rulesText": "Exile target creature with the greatest power among creatures on the battlefield. (If two or more creatures are tied for greatest power, target any one of them.)"
+"rulesText": "Exile target creature with power 4 or greater."
 },
 {
 "name": "Cache Mapper",
@@ -349,7 +349,7 @@
 "scry": 8
 },
 "tags": {
-"artiface": 1,
+"artifact": 1,
 "evasion": 1
 }
 },
@@ -370,7 +370,7 @@
 "evasion": 10
 },
 "tags": {
-"devices": 1,
+"artifact": 1,
 "evasion": 1,
 "police": 1
 }
@@ -612,8 +612,9 @@
 "notes": {
 "power": 30,
 "tags": {
-"devices": 1,
-"evasion": 1
+"artifact": 1,
+"evasion": 1,
+"etb": 1
 }
 },
 "rulesText": "Flying\nWhen Suppression Patrol enters the battlefield, tap target creature an opponent controls."
@@ -2083,10 +2084,6 @@
 "potential": 60,
 "synergies": {
 "fodder": 8
-},
-"tags": {
-"deviceTokens": 1.4,
-"evasion": 1.0
 }
 },
 "rulesText": "When Silent Infiltrator enters the battlefield, you may sacrifice another nonland permanent. When you do, target creature an opponent controls gets -3/-3 until end of turn."

@@ -43,13 +43,20 @@ export default class Tabs extends React.Component {
     }
 
     getDefaultSelectedTabIndex(tabs) {
-        const currentUrlHash = window.location.hash;
+        const windowGlobal = typeof window !== "undefined" && window;
+        if (!windowGlobal) {
+            return 0;
+        }
+        const currentUrlHash = windowGlobal.location.hash;
         const index = tabs.findIndex(tab => tab.urlHash === currentUrlHash);
         return index !== -1 ? index : 0;
     }
 
     onTabClick(urlHash, index) {
-        window.history.replaceState(undefined, undefined, urlHash);
+        const windowGlobal = typeof window !== "undefined" && window;
+        if (windowGlobal) {
+            windowGlobal.history.replaceState(undefined, undefined, urlHash);
+        }
         this.setState({
             selectedTabIndex: index
         });

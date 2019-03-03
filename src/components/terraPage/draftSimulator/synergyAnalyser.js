@@ -44,7 +44,7 @@ export default class SynergyAnalyser {
 
         for (const prop in card.notes.synergies) {
             if (this[prop] === undefined) {
-                throw new Error("Missing card tag.");
+                throw new Error(`Missing card tag: ${prop}`);
             }
             fractionOfPotentialFulfilled += this[prop] / card.notes.synergies[prop];
             numberOfSynergies++;
@@ -59,7 +59,7 @@ export default class SynergyAnalyser {
     countCard(card) {
         for (const prop in card.notes.tags) {
             if (this[prop] === undefined) {
-                throw new Error("Missing card tag.");
+                throw new Error(`Missing card tag: ${prop}`);
             }
             this[prop] += card.notes.tags[prop];
         }
