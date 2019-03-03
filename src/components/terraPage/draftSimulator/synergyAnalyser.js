@@ -3,6 +3,7 @@ export default class SynergyAnalyser {
         this.artifact = 0;
         this.etb = 0;
         this.lifegain = 0;
+        this.lifeloss = 0;
         this.equipment = 0;
         this.creatureTokens = 0;
         this.fodder = 0;
