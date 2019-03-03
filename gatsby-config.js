@@ -2,6 +2,7 @@ module.exports = {
     siteMetadata: {
         title: "Lost in Space"
     },
+    pathPrefix: "/LostInSpace",
     plugins: [
         "gatsby-plugin-sass",
         "gatsby-plugin-react-helmet",
