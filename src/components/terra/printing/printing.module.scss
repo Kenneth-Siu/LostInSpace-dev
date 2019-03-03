@@ -1,0 +1,12 @@
+.printBox {
+    line-height: 0;
+}
+
+.printCard {
+    page-break-inside: avoid;
+    -webkit-region-break-inside: avoid;
+    page-break-before: auto;
+    page-break-after: auto;
+    width: 6.4cm;
+    height: auto;
+}

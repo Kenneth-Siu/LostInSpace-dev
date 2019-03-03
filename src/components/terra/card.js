@@ -1,4 +1,4 @@
-import { withPrefix } from 'gatsby'
+import { withPrefix } from 'gatsby';
 import uuid from "uuid";
 
 export const COLOR = Object.freeze({
