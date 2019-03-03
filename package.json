@@ -25,11 +25,13 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
     "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "rm -rf node_modules/gh-pages/.cache && gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "rm -rf node_modules/gh-pages/.cache && gatsby build --prefix-paths && gh-pages -d public",
+    "serve": "gatsby serve --prefix-paths",
+    "build-and-serve": "npm run build && npm run serve"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1"

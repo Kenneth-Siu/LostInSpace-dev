@@ -5,11 +5,21 @@ export default class Tabs extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            selectedTabIndex: this.getDefaultSelectedTabIndex(props.content)
+            isClient: false,
+            selectedTabIndex: this.getDefaultSelectedTabIndex(this.props.content)
         };
     }
 
+    componentDidMount() {
+        this.setState({
+            isClient: true
+        });
+    }
+
     render() {
+        if (!this.state.isClient) {
+            return null;
+        }
         return (
             <>
                 <div className={styles.tabsBar}>

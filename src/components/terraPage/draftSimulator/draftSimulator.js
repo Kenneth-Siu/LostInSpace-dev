@@ -13,6 +13,7 @@ export default class DraftSimulator extends React.Component {
         this.computerPlayers = Player.createTableOfPlayers();
         this.humanPlayer = this.computerPlayers.shift();
         this.state = {
+            isClient: false,
             pack: this.humanPlayer.nextPack.cards.map(card => {
                 return this.cardPicker.evaluateCard(this.humanPlayer.picks, card);
             }),
@@ -28,7 +29,16 @@ export default class DraftSimulator extends React.Component {
         this.passDirection = "left";
     }
 
+    componentDidMount() {
+        this.setState({
+            isClient: true
+        });
+    }
+
     render() {
+        if (!this.state.isClient) {
+            return null;
+        }
         return (
             <div className={styles.draftSim}>
                 {this.state.pack.length > 0 && (
@@ -50,8 +60,7 @@ export default class DraftSimulator extends React.Component {
                     onMouseLeave={() => this.handleMouseLeavePileCard()}
                 />
                 <h3 className={styles.header}>
-                    Sideboard ({this.state.sideboard.length}){" "}
-                    <small>Click a card to move it to your deck</small>
+                    Sideboard ({this.state.sideboard.length}) <small>Click a card to move it to your deck</small>
                 </h3>
                 <CardPiles
                     cards={this.state.sideboard}
