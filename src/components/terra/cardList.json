@@ -1532,11 +1532,27 @@
 "rulesText": "Flying\nAt the beginning of your upkeep, return an artifact you control to its owner’s hand."
 },
 {
+"name": "Back to Work",
+"imageName": "Back to Work",
+"color": "B",
+"castingCost": "3B",
+"id": 84,
+"rarity": "C",
+"notes": {
+"power": 25,
+"tags": {
+"fodder": 1,
+"creatureFodder": 1
+}
+},
+"rulesText": "Return up to two target creature cards from your graveyard to your hand.\nTeleport 1B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
+},
+{
 "name": "Backalley Trafficker",
 "imageName": "Backalley Trafficker",
 "color": "B",
 "castingCost": "2B",
-"id": 84,
+"id": 85,
 "rarity": "U",
 "notes": {
 "power": 25,
@@ -1560,7 +1576,7 @@
 "imageName": "Boardroom Keeper",
 "color": "B",
 "castingCost": "2B",
-"id": 85,
+"id": 86,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -1581,7 +1597,7 @@
 "imageName": "Cloning Vats",
 "color": "B",
 "castingCost": "2B",
-"id": 86,
+"id": 87,
 "rarity": "R",
 "notes": {
 "power": 15,
@@ -1600,7 +1616,7 @@
 "imageName": "Corporate Spy",
 "color": "B",
 "castingCost": "1B",
-"id": 87,
+"id": 88,
 "rarity": "C",
 "notes": {
 "power": 10,
@@ -1622,7 +1638,7 @@
 "imageName": "Crux of Space-Time",
 "color": "B",
 "castingCost": "3BB",
-"id": 88,
+"id": 89,
 "rarity": "R",
 "notes": {
 "power": 90
@@ -1634,7 +1650,7 @@
 "imageName": "Engineered Endemic",
 "color": "B",
 "castingCost": "1B",
-"id": 89,
+"id": 90,
 "rarity": "R",
 "notes": {
 "power": 80
@@ -1646,7 +1662,7 @@
 "imageName": "Eviscerate",
 "color": "B",
 "castingCost": "3B",
-"id": 90,
+"id": 91,
 "rarity": "C",
 "notes": {
 "power": 35
@@ -1658,7 +1674,7 @@
 "imageName": "Figment of Death",
 "color": "B",
 "castingCost": "3B",
-"id": 91,
+"id": 92,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -1675,7 +1691,7 @@
 "imageName": "Gambling Ring",
 "color": "B",
 "castingCost": "1BB",
-"id": 92,
+"id": 93,
 "rarity": "U",
 "notes": {
 "power": 0,
@@ -1691,7 +1707,7 @@
 "imageName": "Grasp of The Left Hand",
 "color": "B",
 "castingCost": "B",
-"id": 93,
+"id": 94,
 "rarity": "U",
 "notes": {
 "power": 80,
@@ -1710,32 +1726,12 @@
 "imageName": "Hypercollider",
 "color": "B",
 "castingCost": "BB",
-"id": 94,
+"id": 95,
 "rarity": "R",
 "notes": {
 "power": 25
 },
 "rulesText": "T, Sacrifice two nonland permanents with the same name: You gain 4 life and scry 4. (Look at the top four cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)"
-},
-{
-"name": "Inside Informant",
-"imageName": "Inside Informant",
-"color": "B",
-"castingCost": "1B",
-"id": 95,
-"rarity": "C",
-"notes": {
-"power": 15,
-"potential": 25,
-"synergies": {
-"evasion": 10,
-"scry": 8
-},
-"tags": {
-"lifegain": 1
-}
-},
-"rulesText": "Enchant creature\nEnchanted creature gets +1/+1 and has lifelink.\nTeleport B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
 },
 {
 "name": "Interrogate",
@@ -2169,10 +2165,11 @@
 "tags": {
 "artifact": 1,
 "scry": 1,
-"cheating": 1
+"cheating": 1,
+"lifeloss": 1
 }
 },
-"rulesText": "1B, T: Each player reveals the top card of their library. You may put the revealed cards into their owners’ graveyards."
+"rulesText": "1B, T, Pay 2 life: Each player reveals the top card of their library. You may put the revealed cards into their owners’ graveyards."
 },
 {
 "name": "Urban Revenant",
@@ -4247,7 +4244,7 @@
 "name": "Mutagenic Serum",
 "imageName": "Mutagenic Serum",
 "color": "",
-"castingCost": "2",
+"castingCost": "3",
 "id": 232,
 "rarity": "R",
 "notes": {
@@ -4261,8 +4258,8 @@
 "rulesText": "When Mutagenic Serum enters the battlefield, draw a card.\nYou may reveal Mutagenic Serum from your opening hand. If you do and you have fewer than seven cards in hand, draw cards equal to the difference."
 },
 {
-"name": "PAR 45i™",
-"imageName": "PAR 45i",
+"name": "Parasite",
+"imageName": "Parasite",
 "color": "",
 "castingCost": "3",
 "id": 233,
@@ -4280,7 +4277,7 @@
 "cheating": 1
 }
 },
-"rulesText": "2, Tap an untapped creature you control: Look at the top card of target player’s library. You may put that card into that player’s graveyard.\n0: Skip your next turn. PAR 45i™’s controller sacrifices it. Any player may activate this ability."
+"rulesText": "2, Tap an untapped creature you control: Look at the top card of target player’s library. You may put that card into that player’s graveyard.\n0: Parasite’s controller sacrifices it. If they do, skip your next turn. Any player may activate this ability."
 },
 {
 "name": "Prophetic Lens",
@@ -4295,7 +4292,7 @@
 "artifact": 1
 }
 },
-"rulesText": "When Prophetic Lens enters the battlefield, scry 3. (Look at the top three cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)\n1, T: Add one mana of any color."
+"rulesText": "When Prophetic Lens enters the battlefield, scry 2. (Look at the top three cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)\n1, T: Add one mana of any color."
 },
 {
 "name": "Swallowers of Civilization",
