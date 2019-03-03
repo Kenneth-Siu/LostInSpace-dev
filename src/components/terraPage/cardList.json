@@ -3034,8 +3034,8 @@
         "rulesText": "Whenever a creature you control becomes the target of a spell, Wild Game Huntmaster deals 2 damage to any target."
     },
     {
-        "name": "Wurmcaller’s Assurance",
-        "imageName": "Wurmcallers Assurance",
+        "name": "Wormcaller’s Assurance",
+        "imageName": "Wormcallers Assurance",
         "color": "R",
         "castingCost": "2R",
         "id": 167,
@@ -3954,8 +3954,8 @@
         "rulesText": "Whenever you cast an instant or sorcery spell, if that instant or sorcery targets Canyon Skitterer, you may copy it. You may choose new targets for the copy."
     },
     {
-        "name": "The Honored Wurmcaller",
-        "imageName": "The Honored Wurmcaller",
+        "name": "The Honored Wormcaller",
+        "imageName": "The Honored Wormcaller",
         "color": "RG",
         "castingCost": "4RG",
         "id": 217,
