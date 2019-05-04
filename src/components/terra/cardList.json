@@ -1255,29 +1255,11 @@
 "rulesText": "Create an X/X colorless Mech artifact creature token, where X is the number of other artifacts you control. "
 },
 {
-"name": "Overwhelm Psyche",
-"imageName": "Overwhelm Psyche",
-"color": "U",
-"castingCost": "1U",
-"id": 69,
-"rarity": "C",
-"notes": {
-"power": 20,
-"tags": {
-"artifact": 1,
-"fodder": 1,
-"creatureFodder": 1,
-"artifactFodder": 1
-}
-},
-"rulesText": "Target creature gets -4/-0 until end of turn.\nCreate a 1/1 colorless Mech artifact creature token."
-},
-{
 "name": "Plasma Reclaimer",
 "imageName": "Plasma Reclaimer",
 "color": "U",
 "castingCost": "3U",
-"id": 70,
+"id": 69,
 "rarity": "C",
 "notes": {
 "power": 10,
@@ -1296,7 +1278,7 @@
 "imageName": "Reconstruction Specialist",
 "color": "U",
 "castingCost": "3UU",
-"id": 71,
+"id": 70,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -1312,7 +1294,7 @@
 "imageName": "Scorned Researcher",
 "color": "U",
 "castingCost": "4U",
-"id": 72,
+"id": 71,
 "rarity": "U",
 "notes": {
 "power": 50,
@@ -1332,7 +1314,7 @@
 "imageName": "Slipstream Distorter",
 "color": "U",
 "castingCost": "3U",
-"id": 73,
+"id": 72,
 "rarity": "U",
 "notes": {
 "power": 20,
@@ -1354,7 +1336,7 @@
 "imageName": "Solar Power Transmitters",
 "color": "U",
 "castingCost": "3U",
-"id": 74,
+"id": 73,
 "rarity": "U",
 "notes": {
 "power": 15,
@@ -1377,7 +1359,7 @@
 "imageName": "Supercoolant Technician",
 "color": "U",
 "castingCost": "1U",
-"id": 75,
+"id": 74,
 "rarity": "U",
 "notes": {
 "power": 0,
@@ -1394,7 +1376,7 @@
 "imageName": "Tactical Freeze Ray",
 "color": "U",
 "castingCost": "2U",
-"id": 76,
+"id": 75,
 "rarity": "U",
 "notes": {
 "power": 20,
@@ -1410,7 +1392,7 @@
 "imageName": "Thought Dampener",
 "color": "U",
 "castingCost": "2U",
-"id": 77,
+"id": 76,
 "rarity": "U",
 "notes": {
 "power": 25,
@@ -1421,6 +1403,24 @@
 }
 },
 "rulesText": "When Thought Dampener enters the battlefield, creatures your opponents control get -2/-0 until your next turn."
+},
+{
+"name": "Threat Profiling",
+"imageName": "Threat Profiling",
+"color": "U",
+"castingCost": "1U",
+"id": 77,
+"rarity": "C",
+"notes": {
+"power": 20,
+"tags": {
+"artifact": 1,
+"fodder": 1,
+"creatureFodder": 1,
+"artifactFodder": 1
+}
+},
+"rulesText": "Target creature gets -4/-0 until end of turn.\nCreate a 1/1 colorless Mech artifact creature token."
 },
 {
 "name": "Time Paradox",
@@ -1593,11 +1593,28 @@
 "rulesText": "Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)\nLifelink (Damage dealt by this creature also causes you to gain that much life.)"
 },
 {
+"name": "Brain Rewiring",
+"imageName": "Brain Rewiring",
+"color": "B",
+"castingCost": "1B",
+"id": 87,
+"rarity": "C",
+"notes": {
+"power": 20,
+"tags": {
+"fodder": 1,
+"creatureFodder": 1,
+"artifactFodder": 1
+}
+},
+"rulesText": "Target player reveals their hand. You choose an artifact or creature card from it. That player discards that card.\nCreate a 1/1 colorless Mech artifact creature token."
+},
+{
 "name": "Cloning Vats",
 "imageName": "Cloning Vats",
 "color": "B",
 "castingCost": "2B",
-"id": 87,
+"id": 88,
 "rarity": "R",
 "notes": {
 "power": 15,
@@ -1616,7 +1633,7 @@
 "imageName": "Corporate Spy",
 "color": "B",
 "castingCost": "1B",
-"id": 88,
+"id": 89,
 "rarity": "C",
 "notes": {
 "power": 10,
@@ -1638,7 +1655,7 @@
 "imageName": "Crux of Space-Time",
 "color": "B",
 "castingCost": "3BB",
-"id": 89,
+"id": 90,
 "rarity": "R",
 "notes": {
 "power": 90
@@ -1650,7 +1667,7 @@
 "imageName": "Engineered Endemic",
 "color": "B",
 "castingCost": "1B",
-"id": 90,
+"id": 91,
 "rarity": "R",
 "notes": {
 "power": 80
@@ -1662,7 +1679,7 @@
 "imageName": "Eviscerate",
 "color": "B",
 "castingCost": "3B",
-"id": 91,
+"id": 92,
 "rarity": "C",
 "notes": {
 "power": 35
@@ -1674,7 +1691,7 @@
 "imageName": "Figment of Death",
 "color": "B",
 "castingCost": "3B",
-"id": 92,
+"id": 93,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -1691,7 +1708,7 @@
 "imageName": "Gambling Ring",
 "color": "B",
 "castingCost": "1BB",
-"id": 93,
+"id": 94,
 "rarity": "U",
 "notes": {
 "power": 0,
@@ -1707,7 +1724,7 @@
 "imageName": "Grasp of The Left Hand",
 "color": "B",
 "castingCost": "B",
-"id": 94,
+"id": 95,
 "rarity": "U",
 "notes": {
 "power": 80,
@@ -1726,7 +1743,7 @@
 "imageName": "Hypercollider",
 "color": "B",
 "castingCost": "BB",
-"id": 95,
+"id": 96,
 "rarity": "R",
 "notes": {
 "power": 25
@@ -1738,7 +1755,7 @@
 "imageName": "Interrogate",
 "color": "B",
 "castingCost": "1B",
-"id": 96,
+"id": 97,
 "rarity": "C",
 "notes": {
 "power": 15,
@@ -1748,23 +1765,6 @@
 }
 },
 "rulesText": "As an additional cost to cast Interrogate, sacrifice a nonland permanent.\nDraw two cards.                                      "
-},
-{
-"name": "Market Manipulation",
-"imageName": "Market Manipulation",
-"color": "B",
-"castingCost": "1B",
-"id": 97,
-"rarity": "C",
-"notes": {
-"power": 20,
-"tags": {
-"fodder": 1,
-"creatureFodder": 1,
-"artifactFodder": 1
-}
-},
-"rulesText": "Target player reveals their hand. You choose an artifact or creature card from it. That player discards that card.\nCreate a 1/1 colorless Mech artifact creature token."
 },
 {
 "name": "Mesmerising Performance",
