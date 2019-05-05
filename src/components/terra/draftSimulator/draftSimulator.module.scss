@@ -1,17 +1,18 @@
 @import "../../button.scss";
 @import "../../colors.scss";
+@import "../../fontSizes.scss";
 @import "../../responsive.scss";
 
 .draftSim {}
 .boosterPack {}
 
 .header {
-    font-size: 20px;
+    @include sub-header-font-size;
     margin-bottom: 16px;
 
     small {
-        font-size: 16px;
-        color: lighten($color-1, 10%);
+        @include sub-font-size;
+        color: $color-1-light;
     }
 }
 .cards {

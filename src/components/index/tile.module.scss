@@ -1,5 +1,6 @@
 @import "../responsive.scss";
 @import "../colors.scss";
+@import "../fontSizes.scss";
 
 $margin: 16px;
 
@@ -53,9 +54,9 @@ $margin: 16px;
 }
 
 .name {
+    @include title-font-size;
     width: 95%;
     color: $color-2;
-    font-size: 32px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,7 +65,7 @@ $margin: 16px;
 }
 
 .description {
-    font-size: 18px;
+    @include default-font-size;
     width: 90%;
     font-style: italic;
     visibility: hidden;

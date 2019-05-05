@@ -13,4 +13,8 @@ html {
 .layout-page-container {
     @include responsive(width, 100%, $medium-container-width, $large-container-width, $huge-container-width);
     @include responsive (margin, 0, 0 auto);
+
+    &.thin {
+        max-width: $medium-container-width;
+    }
 }

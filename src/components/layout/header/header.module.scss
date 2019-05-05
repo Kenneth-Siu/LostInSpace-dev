@@ -16,7 +16,7 @@
 
 .container {
     @include responsive(width, 100%, $medium-container-width, $large-container-width, $huge-container-width);
-    padding: 0 1rem;
+    @include responsive(padding, 1rem, 1rem, 0);
 }
 
 .homeLink {

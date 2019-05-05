@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Header from "./header/header";
 import "./layout.scss";
 
-export default function Layout({ pageTitle, children }) {
+export default function Layout({ pageTitle, children, thin }) {
     return (
         <StaticQuery
             query={graphql`
@@ -23,7 +23,7 @@ export default function Layout({ pageTitle, children }) {
                         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
                     </Helmet>
                     <Header siteTitle={data.site.siteMetadata.title} />
-                    <div className="layout-page-container">{children}</div>
+                    <div className={`layout-page-container ${thin ? "thin" : ""}`}>{children}</div>
                 </>
             )}
         />

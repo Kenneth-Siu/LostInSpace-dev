@@ -14,11 +14,10 @@ export default function IndexPage() {
         <Layout>
             <div className={styles.indexPage}>
                 <Tile
-                    to="/"
+                    to="/blog/"
                     image={<BlogSplash />}
                     name="The Toolbox"
                     description="Life, games, and game design."
-                    underConstruction
                 />
                 <Tile
                     to="/terra/"

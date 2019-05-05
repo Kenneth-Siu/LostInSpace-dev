@@ -1,0 +1,9 @@
+@import "../responsive";
+
+.feed {
+    @include responsive(padding, 0 1rem, 0 1rem, 0);
+
+    > *:not(:last-child) {
+        border-bottom: 1px solid grey;
+    }
+}
