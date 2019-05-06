@@ -3,8 +3,8 @@ const { getBlogPosts } = require('./posts/getBlogPosts');
 const postsPerPage = 5;
 
 exports.createPages = async ({ actions: { createPage } }) => {
-    const blogPosts = getBlogPosts();
-    blogPosts.sort((a, b) => b.publishDate.getTime() - a.publishDate.getTime());
+    const blogPosts = getBlogPosts().filter(post => Date.now() - post.publishDate > 0);
+    blogPosts.sort((a, b) => b.publishDate - a.publishDate);
 
     createPage({
         path: "/blog/",

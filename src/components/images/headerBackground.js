@@ -2,14 +2,14 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-export default function HeaderIcon() {
+export default function HeaderBackground() {
     return (
         <StaticQuery
             query={graphql`
                 query {
-                    placeholderImage: file(relativePath: { eq: "icon.png" }) {
+                    placeholderImage: file(relativePath: { eq: "horizon.png" }) {
                         childImageSharp {
-                            fluid(maxWidth: 256) {
+                            fluid(maxWidth: 1920, cropFocus: CENTER) {
                                 ...GatsbyImageSharpFluid
                             }
                         }

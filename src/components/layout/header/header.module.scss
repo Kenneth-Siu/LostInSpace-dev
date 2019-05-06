@@ -4,6 +4,7 @@
 
 .header {
     @include title-font-size;
+    position: relative;
     width: 100%;
     background-color: $color-1;
     height: 2em;
@@ -14,16 +15,30 @@
     align-items: center;
 }
 
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    @include responsive(opacity, 0.4, 0.5);
+
+    > * {
+        @include responsive(transform, translateY(-40%), translateY(-41%), translateY(-42%), translateY(-43%));
+    }
+}
+
 .container {
     @include responsive(width, 100%, $medium-container-width, $large-container-width, $huge-container-width);
     @include responsive(padding, 1rem, 1rem, 0);
+    position: relative;
 }
 
 .homeLink {
     text-decoration: none;
     color: $color-2;
 
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
