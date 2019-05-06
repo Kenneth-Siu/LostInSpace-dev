@@ -17,7 +17,7 @@ export default function IndexPage() {
                     to="/blog/"
                     image={<BlogSplash />}
                     name="The Toolbox"
-                    description="Life, games, and game design."
+                    description="Add some new tools to your mental toolbox, or maybe sharpen ones you already have. Every Thursday, find a new post on game theory, strategy, or design."
                 />
                 <Tile
                     to="/terra/"
@@ -48,7 +48,7 @@ export default function IndexPage() {
                     to="/"
                     image={<CityBlocksSplash />}
                     name="City Blocks"
-                    description="Everything is interconnected, from between your own city's blocks, to your fellow players' blocks! An environmental city-building game for 2–4 players."
+                    description="Everything is interconnected, from between your own city's blocks, to your fellow players' blocks. An environmental city-building game for 2–4 players."
                 /> */}
             </div>
         </Layout>
