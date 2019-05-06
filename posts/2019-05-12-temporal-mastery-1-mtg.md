@@ -1,4 +1,4 @@
-# Temporal Mastery
+# Temporal Mastery — Tempo in Magic: the Gathering
 
 Tempo is the speed at which you are reaching your victory condition compared to your opponent.
 
