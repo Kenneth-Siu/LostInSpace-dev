@@ -8,11 +8,9 @@ Let's start with a bit about me and what games have influenced my thinking. I've
 
 ![Magic: the Gathering, Android: Netrunner, Overwatch, Endless Space, Hearthstone, Thomas Was Alone, Undertale, Race for the Galaxy, One Night Ultimate Werewolf, Anno 2070, Evil Genius, Fallout: New Vegas, SimCity 4, Shadowrun: Hong Kong, FTL: Faster Than Light, Sid Meier's Civilization, The Sims, Stardew Valley, Stellaris, Power Grid, Kingdom of Loathing, Europa Universalis, Slay the Spire, Team Fortress 2][games]
 
-_You should definitely try these games... or at least read about them._
-
 ### The Big 2
 
-In [_Magic: the Gathering_](https://magic.wizards.com/), you are powerful mages competing against the others. It's the most popular collectible card game in the world, having its first set of cards released in 1993. Few games can boast such a long history, with players who started decades ago still playing today.
+[_Magic: the Gathering_](https://magic.wizards.com/) sets you as powerful mages competing against each other. It's the most popular collectible card game in the world, having its first set of cards released in 1993. Few games can boast such a long history, with players who started decades ago still playing today.
 
 [_Android: Netrunner_](https://www.fantasyflightgames.com/en/products/android-netrunner-the-card-game/) sees a hacker go up against a faceless corporation in a cyber-noir world through an asymmetrical living card game. First published in 2012, Fantasy Flight Games chose not to renew the license to the Netrunner game rules in 2018 and so they discontinued work on it. However, a volunteer organisation, [Nisei](http://nisei.net/about/nisei/), has taken up the mantle to continue the game for its small but dedicated fan base.
 

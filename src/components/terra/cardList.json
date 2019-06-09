@@ -253,7 +253,7 @@
 "evasion": 1
 }
 },
-"rulesText": "Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)\nWhen Head Detective enters the battlefield, you may exile another target creature until Head Detective leaves the battlefield."
+"rulesText": "Hexproof\nWhen Head Detective enters the battlefield, you may exile another target creature until Head Detective leaves the battlefield."
 },
 {
 "name": "Helios Comms Satellite",
@@ -378,7 +378,7 @@
 "police": 1
 }
 },
-"rulesText": "Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)"
+"rulesText": "Whenever Mongrel Companion attacks with exactly one other creature, it gains indestructible until end of turn."
 },
 {
 "name": "Observation Blimp",
@@ -685,7 +685,7 @@
 "evasion": 10
 }
 },
-"rulesText": "As long as Undercover Agent is equipped, it has vigilance and infiltrate. (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)"
+"rulesText": "As long as Undercover Agent is equipped, it can’t be blocked by creatures with converted mana cost \n4 or greater."
 },
 {
 "name": "Wartime Recruitment",
@@ -748,31 +748,11 @@
 "rulesText": "Flying\nWhenever you gain life, you may pay X, where X is less than or equal to the amount of life you gained. If you do, create X 1/1 white Military creature tokens."
 },
 {
-"name": "Academic Sabotage",
-"imageName": "Academic Sabotage",
-"color": "U",
-"castingCost": "2U",
-"id": 42,
-"rarity": "C",
-"notes": {
-"power": 25,
-"potential": 30,
-"synergies": {
-"flash": 15
-},
-"tags": {
-"scry": 1,
-"flash": 1
-}
-},
-"rulesText": "Return target creature to its owner’s hand. Scry 2. (Look at the top two cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)"
-},
-{
 "name": "Ambassadorship",
 "imageName": "Ambassadorship",
 "color": "U",
 "castingCost": "2UU",
-"id": 43,
+"id": 42,
 "rarity": "R",
 "notes": {
 "power": 60
@@ -784,7 +764,7 @@
 "imageName": "Arrester Droid",
 "color": "U",
 "castingCost": "2U",
-"id": 44,
+"id": 43,
 "rarity": "C",
 "notes": {
 "power": 20,
@@ -806,7 +786,7 @@
 "imageName": "Atmospheric Survey",
 "color": "U",
 "castingCost": "1U",
-"id": 45,
+"id": 44,
 "rarity": "C",
 "notes": {
 "power": 20,
@@ -826,7 +806,7 @@
 "imageName": "Brain Drain",
 "color": "U",
 "castingCost": "1U",
-"id": 46,
+"id": 45,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -846,7 +826,7 @@
 "imageName": "Build Better",
 "color": "U",
 "castingCost": "4U",
-"id": 47,
+"id": 46,
 "rarity": "U",
 "notes": {
 "power": 10,
@@ -866,7 +846,7 @@
 "imageName": "The Chronos",
 "color": "U",
 "castingCost": "7U",
-"id": 48,
+"id": 47,
 "rarity": "M",
 "notes": {
 "power": 20,
@@ -882,7 +862,7 @@
 "imageName": "Cloud Darter",
 "color": "U",
 "castingCost": "1UU",
-"id": 49,
+"id": 48,
 "rarity": "R",
 "notes": {
 "power": 20,
@@ -904,7 +884,7 @@
 "imageName": "Collapse Consciousness",
 "color": "U",
 "castingCost": "1UU",
-"id": 50,
+"id": 49,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -924,7 +904,7 @@
 "imageName": "Coordinate Scrambler",
 "color": "U",
 "castingCost": "2U",
-"id": 51,
+"id": 50,
 "rarity": "R",
 "notes": {
 "power": 15,
@@ -943,7 +923,7 @@
 "imageName": "Engine Welder",
 "color": "U",
 "castingCost": "2U",
-"id": 52,
+"id": 51,
 "rarity": "C",
 "notes": {
 "power": 10,
@@ -952,14 +932,14 @@
 "artifact": 12
 }
 },
-"rulesText": "As long as you control two or more artifacts, Engine Welder gets +1/+1 and has flying."
+"rulesText": "As long as you control two or more artifacts, Engine Welder gets +1/+0 and has flying."
 },
 {
 "name": "Escape the City",
 "imageName": "Escape the City",
 "color": "U",
 "castingCost": "4UU",
-"id": 53,
+"id": 52,
 "rarity": "U",
 "notes": {
 "power": 20,
@@ -985,7 +965,7 @@
 "imageName": "Exiled Xenologist",
 "color": "U",
 "castingCost": "1U",
-"id": 54,
+"id": 53,
 "rarity": "U",
 "notes": {
 "power": 25,
@@ -999,14 +979,14 @@
 "scry": 1
 }
 },
-"rulesText": "Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)\n3U, T: Scry 2. (Look at the top two cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)"
+"rulesText": "T: Scry 1. (Look at the top card of your library, then you may put that card on the bottom of your library.)"
 },
 {
 "name": "Future Insight",
 "imageName": "Future Insight",
 "color": "U",
 "castingCost": "3U",
-"id": 55,
+"id": 54,
 "rarity": "C",
 "notes": {
 "power": 20,
@@ -1015,14 +995,14 @@
 "scry": 1
 }
 },
-"rulesText": "Draw two cards. Look at the top five cards of your library and put them back in any order. "
+"rulesText": "Draw three cards, then put two cards from your hand both on top of your library or both on the bottom of your library."
 },
 {
 "name": "Guidance Pods",
 "imageName": "Guidance Pods",
 "color": "U",
 "castingCost": "U",
-"id": 56,
+"id": 55,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -1042,7 +1022,7 @@
 "imageName": "Holoship Fleet",
 "color": "U",
 "castingCost": "3UUU",
-"id": 57,
+"id": 56,
 "rarity": "R",
 "notes": {
 "power": 60,
@@ -1058,7 +1038,7 @@
 "imageName": "Kitefin Racer",
 "color": "U",
 "castingCost": "3U",
-"id": 58,
+"id": 57,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -1081,7 +1061,7 @@
 "imageName": "Kushak Exile",
 "color": "U",
 "castingCost": "5U",
-"id": 59,
+"id": 58,
 "rarity": "C",
 "notes": {
 "power": 20,
@@ -1099,7 +1079,7 @@
 "imageName": "Lambert Stealth Bomber",
 "color": "U",
 "castingCost": "5U",
-"id": 60,
+"id": 59,
 "rarity": "U",
 "notes": {
 "power": 30,
@@ -1119,7 +1099,7 @@
 "imageName": "Lost in Space",
 "color": "U",
 "castingCost": "U",
-"id": 61,
+"id": 60,
 "rarity": "C",
 "notes": {
 "power": 10,
@@ -1135,7 +1115,7 @@
 "imageName": "Malfunction",
 "color": "U",
 "castingCost": "3U",
-"id": 62,
+"id": 61,
 "rarity": "C",
 "notes": {
 "power": 25
@@ -1147,7 +1127,7 @@
 "imageName": "Matter Redistribution",
 "color": "U",
 "castingCost": "4UU",
-"id": 63,
+"id": 62,
 "rarity": "U",
 "notes": {
 "power": 45,
@@ -1166,7 +1146,7 @@
 "imageName": "Migratory City",
 "color": "U",
 "castingCost": "1U",
-"id": 64,
+"id": 63,
 "rarity": "C",
 "notes": {
 "power": 10,
@@ -1179,14 +1159,14 @@
 "cheating": 1
 }
 },
-"rulesText": "2U, T: Target player puts the top two cards of his or her library into his or her graveyard."
+"rulesText": "2U, T: Target player puts the top two cards of their library into their graveyard."
 },
 {
 "name": "Military Intelligence",
 "imageName": "Military Intelligence",
 "color": "U",
 "castingCost": "1U",
-"id": 65,
+"id": 64,
 "rarity": "U",
 "notes": {
 "power": 15,
@@ -1202,7 +1182,7 @@
 "imageName": "Mindmelded Sysadmin",
 "color": "U",
 "castingCost": "1U",
-"id": 66,
+"id": 65,
 "rarity": "C",
 "notes": {
 "power": 15,
@@ -1225,7 +1205,7 @@
 "imageName": "Nanoreplicator Zero",
 "color": "U",
 "castingCost": "3UU",
-"id": 67,
+"id": 66,
 "rarity": "R",
 "notes": {
 "power": 60,
@@ -1240,7 +1220,7 @@
 "imageName": "Neutron Flow",
 "color": "U",
 "castingCost": "2U",
-"id": 68,
+"id": 67,
 "rarity": "C",
 "notes": {
 "power": 0,
@@ -1259,7 +1239,7 @@
 "imageName": "Plasma Reclaimer",
 "color": "U",
 "castingCost": "3U",
-"id": 69,
+"id": 68,
 "rarity": "C",
 "notes": {
 "power": 10,
@@ -1278,7 +1258,7 @@
 "imageName": "Reconstruction Specialist",
 "color": "U",
 "castingCost": "3UU",
-"id": 70,
+"id": 69,
 "rarity": "C",
 "notes": {
 "power": 25,
@@ -1294,7 +1274,7 @@
 "imageName": "Scorned Researcher",
 "color": "U",
 "castingCost": "4U",
-"id": 71,
+"id": 70,
 "rarity": "U",
 "notes": {
 "power": 50,
@@ -1314,7 +1294,7 @@
 "imageName": "Slipstream Distorter",
 "color": "U",
 "castingCost": "3U",
-"id": 72,
+"id": 71,
 "rarity": "U",
 "notes": {
 "power": 20,
@@ -1336,7 +1316,7 @@
 "imageName": "Solar Power Transmitters",
 "color": "U",
 "castingCost": "3U",
-"id": 73,
+"id": 72,
 "rarity": "U",
 "notes": {
 "power": 15,
@@ -1359,7 +1339,7 @@
 "imageName": "Supercoolant Technician",
 "color": "U",
 "castingCost": "1U",
-"id": 74,
+"id": 73,
 "rarity": "U",
 "notes": {
 "power": 0,
@@ -1376,7 +1356,7 @@
 "imageName": "Tactical Freeze Ray",
 "color": "U",
 "castingCost": "2U",
-"id": 75,
+"id": 74,
 "rarity": "U",
 "notes": {
 "power": 20,
@@ -1392,7 +1372,7 @@
 "imageName": "Thought Dampener",
 "color": "U",
 "castingCost": "2U",
-"id": 76,
+"id": 75,
 "rarity": "U",
 "notes": {
 "power": 25,
@@ -1409,7 +1389,7 @@
 "imageName": "Threat Profiling",
 "color": "U",
 "castingCost": "1U",
-"id": 77,
+"id": 76,
 "rarity": "C",
 "notes": {
 "power": 20,
@@ -1427,7 +1407,7 @@
 "imageName": "Time Paradox",
 "color": "U",
 "castingCost": "3UU",
-"id": 78,
+"id": 77,
 "rarity": "R",
 "notes": {
 "power": 40,
@@ -1444,7 +1424,7 @@
 "imageName": "Transcend Space-Time",
 "color": "U",
 "castingCost": "3U",
-"id": 79,
+"id": 78,
 "rarity": "R",
 "notes": {
 "power": 25,
@@ -1460,7 +1440,7 @@
 "imageName": "Umida Biotechnology",
 "color": "U",
 "castingCost": "1U",
-"id": 80,
+"id": 79,
 "rarity": "M",
 "notes": {
 "power": 30,
@@ -1468,14 +1448,14 @@
 "flash": 1.5
 }
 },
-        "rulesText": "+1: You may search your library for up to three cards and exile them. Then, if you searched your library this way, shuffle your library.\n0: Until your next turn, you may cast creature spells as though they had flash.\n-6: You get an emblem with “Creatures your opponents control get -1/-0.”"
+        "rulesText": "+1: You may search your library for up to three cards and exile them. Then, if you searched your library this way, shuffle your library.\n0: Until your next turn, you may cast creature spells as though they had flash. You may activate this ability any time you could cast an instant during your turn.\n-6: You get an emblem with “Creatures your opponents control get -1/-0.”"
 },
 {
 "name": "Umida Security Protocols",
 "imageName": "Umida Security Protocols",
 "color": "U",
 "castingCost": "2U",
-"id": 81,
+"id": 80,
 "rarity": "R",
 "notes": {
 "power": 10,
@@ -1494,7 +1474,7 @@
 "imageName": "Undercroft Entangler",
 "color": "U",
 "castingCost": "3U",
-"id": 82,
+"id": 81,
 "rarity": "C",
 "notes": {
 "power": 30,
@@ -1509,6 +1489,26 @@
 }
 },
 "rulesText": "Infiltrate (Whenever this creature attacks with exactly one other creature, it can’t be blocked this turn.)\nWhen Undercroft Entangler enters the battlefield, you may return target creature to its owner’s hand."
+},
+{
+"name": "Voyage’s End",
+"imageName": "Voyages End",
+"color": "U",
+"castingCost": "1U",
+"id": 82,
+"rarity": "C",
+"notes": {
+"power": 25,
+"potential": 30,
+"synergies": {
+"flash": 15
+},
+"tags": {
+"scry": 1,
+"flash": 1
+}
+},
+"rulesText": "Return target creature to its owner’s hand. Scry 1. (Look at the top card of your library, then you may put that card on the bottom of your library.)"
 },
 {
 "name": "Wai Advance Prototype",
@@ -1545,7 +1545,7 @@
 "creatureFodder": 1
 }
 },
-"rulesText": "Return up to two target creature cards from your graveyard to your hand.\nTeleport 1B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
+"rulesText": "Return up to two target creature cards from your graveyard to your hand.\nTeleport 2B (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
 },
 {
 "name": "Backalley Trafficker",
@@ -1663,28 +1663,28 @@
 "rulesText": "Choose one —\n• Destroy all artifact creatures.\n• Destroy all nonartifact creatures."
 },
 {
+"name": "Disassemble",
+"imageName": "Disassemble",
+"color": "B",
+"castingCost": "3B",
+"id": 91,
+"rarity": "C",
+"notes": {
+"power": 35
+},
+"rulesText": "Exile target creature."
+},
+{
 "name": "Engineered Endemic",
 "imageName": "Engineered Endemic",
 "color": "B",
 "castingCost": "1B",
-"id": 91,
+"id": 92,
 "rarity": "R",
 "notes": {
 "power": 80
 },
 "rulesText": "As Engineered Endemic enters the battlefield, name a card.\nNonartifact creatures with the chosen name get -6/-6."
-},
-{
-"name": "Eviscerate",
-"imageName": "Eviscerate",
-"color": "B",
-"castingCost": "3B",
-"id": 92,
-"rarity": "C",
-"notes": {
-"power": 35
-},
-"rulesText": "Destroy target creature."
 },
 {
 "name": "Figment of Death",
@@ -1784,8 +1784,8 @@
 "rulesText": "Look at the top five cards of target player’s library. For each card, put it into its owner’s graveyard unless you pay 2 life. Put the rest back on top of their owner’s library in any order."
 },
 {
-"name": "Metamorphotic Membrane",
-"imageName": "Metamorphotic Membrane",
+"name": "Metamorphic Membrane",
+"imageName": "Metamorphic Membrane",
 "color": "B",
 "castingCost": "B",
 "id": 99,
@@ -1797,7 +1797,7 @@
 "scry": 1
 }
 },
-"rulesText": "Target creature gets +2/+0 and gains mutate until end of turn. (When it dies, its controller reveal cards from the top of his or her library until he or she reveals a creature card that costs less. That player puts that card onto the battlefield and the rest on the bottom of his or her library in a random order.)"
+"rulesText": "Until end of turn, target creature gets +2/+0 and gains “When this creature dies, return it to the battlefield tapped under its owner’s control.”"
 },
 {
 "name": "Mindmeld Torturer",
@@ -1809,12 +1809,9 @@
 "notes": {
 "power": 30,
 "tags": {
-"fodder": 1,
-"artifactFodder": 1,
-"equipment": 1
 }
 },
-"rulesText": "Deathtouch\nWhen Mindmeld Torturer enters the battlefield, arm it. (Create a colorless Equipment artifact token attached to this creature. It has “Equipped creature gets +1/+1” and equip 2.)"
+"rulesText": "Deathtouch\nWhen Mindmeld Torturer dies, each opponent loses 2 life and you gain 2 life."
 },
 {
 "name": "Mortality",
@@ -1875,7 +1872,7 @@
 "mutantXeno": 1
 }
 },
-"rulesText": "Flying\nCreatures you control can’t attack alone."
+"rulesText": "Flying\nCreatures you control can’t attack unless exactly two creatures attack."
 },
 {
 "name": "Peacekeeper Satellite",
@@ -1914,7 +1911,7 @@
 "name": "Punitive Counterstrike",
 "imageName": "Punitive Counterstrike",
 "color": "B",
-"castingCost": "XBB",
+"castingCost": "X1B",
 "id": 106,
 "rarity": "C",
 "notes": {
@@ -2189,7 +2186,7 @@
 "scry": 1
 }
 },
-"rulesText": "Whenever another nonland permanent is put into a graveyard, put a +1/+1 counter on Urban Revenant.\nMutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)      "
+"rulesText": "Whenever another nonland permanent is put into a graveyard from the battlefield, put a +1/+1 counter on Urban Revenant.\nMutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)      "
 },
 {
 "name": "Warapur Company Contract",
@@ -2342,7 +2339,7 @@
 "scry": 0.5
 }
 },
-"rulesText": "Target creature gets +3/+1 and gains trample until end of turn. Scry 1. (Look at the top card of your library, then you may put that card on the bottom of your library.)"
+"rulesText": "Target creature gets +3/+2 and gains trample until end of turn. Scry 1. (Look at the top card of your library, then you may put that card on the bottom of your library.)"
 },
 {
 "name": "Bergstadt Roboticists",
@@ -2660,7 +2657,7 @@
 "name": "Iridium Throwing Knife",
 "imageName": "Iridium Throwing Knife",
 "color": "R",
-"castingCost": "1RR",
+"castingCost": "1R",
 "id": 147,
 "rarity": "U",
 "notes": {
@@ -2674,7 +2671,7 @@
 "equipment": 1
 }
 },
-"rulesText": "Equipped creature gets +2/+0.\nWhenever equipped creature deals attacks, you may unequip Iridium Throwing Knife. When you do, Iridium Throwing Knife deals 2 damage to target creature.\nEquip 3"
+"rulesText": "Equipped creature gets +2/+0.\nWhenever a creature enters the battlefield under your control or another equipment becomes attached to a creature you control, you may attach Iridium Throwing Knife to that creature.\nEquip 2"
 },
 {
 "name": "Leave Behind",
@@ -2686,7 +2683,7 @@
 "notes": {
 "power": 25
 },
-"rulesText": "Each player chooses five permanents that player controls. Destroy the rest."
+"rulesText": "Each player chooses five permanents, then sacrifices five permanents that haven’t been chosen this way."
 },
 {
 "name": "Mechanized Rampager",
@@ -2726,7 +2723,7 @@
 "equipment": 1
 }
 },
-"rulesText": "Equipped creature has double strike and trample.\nEquip 3\nTeleport 1R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
+"rulesText": "Equipped creature has double strike and trample.\nEquip 2\nTeleport 1R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
 },
 {
 "name": "Ohmwrecker",
@@ -2783,7 +2780,7 @@
 "scry": 1
 }
 },
-"rulesText": "Rip Space-Time deals 5 damage to any target and 2 damage to you. Scry 2. (Look at the top two cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)"
+"rulesText": "Rip Space-Time deals 5 damage to any target and 2 damage to you.\nTeleport 1R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
 },
 {
 "name": "Rocket Salvo",
@@ -2799,7 +2796,7 @@
 "scry": 8
 }
 },
-"rulesText": "Rocket Salvo deals 2 damage to any target.\nTeleport R (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
+"rulesText": "Rocket Salvo deals 3 damage to target creature. Scry 1. (Look at the top card of your library, then you may put that card on the bottom of your library.)"
 },
 {
 "name": "Scrapyard Salvager",
@@ -2837,7 +2834,7 @@
 "scry": 1
 }
 },
-"rulesText": "Destroy target artifact. Scry 2 (Look at the top two cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)."
+"rulesText": "Destroy target artifact. Scry 2. (Look at the top two cards of your library, then put any number of them on the bottom of your library and the rest on top in any order.)"
 },
 {
 "name": "Slagthrower",
@@ -2919,7 +2916,7 @@
 "name": "Take Hostage",
 "imageName": "Take Hostage",
 "color": "R",
-"castingCost": "3R",
+"castingCost": "2R",
 "id": 161,
 "rarity": "C",
 "notes": {
@@ -2935,7 +2932,7 @@
 "scry": 1
 }
 },
-"rulesText": "Gain control of target artifact or creature until end of turn. Untap it. It gains haste until end of turn. Scry 1. (Look at the top card of your library, then you may put that card on the bottom of your library.)"
+"rulesText": "Gain control of target artifact or creature until end of turn. Untap it. It gains haste until end of turn."
 },
 {
 "name": "Throw to the Wind",
@@ -3255,7 +3252,7 @@
 "scry": 15
 }
 },
-"rulesText": "5G: All creatures able to block Escaped Test Subject this turn do so.\nTeleport G (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
+"rulesText": "5G: All creatures able to block Escaped Test Subject this turn do so.\nTeleport 1G (You may cast this card for its teleport cost while you’re looking at it in your library or revealing it from your library.)"
 },
 {
 "name": "Experimental Mutagenics",
@@ -3372,7 +3369,7 @@
 "scry": 1
 }
 },
-"rulesText": "Enchant creature\nEnchanted creature gets +6/+6 and has mutate. (When it dies, its controller reveals cards from the top of his or her library until he or she reveals a creature card that costs less. That player puts that card onto the battlefield and the rest on the bottom of his or her library in a random order.)"
+"rulesText": "Enchant creature\nEnchanted creature gets +6/+6 and has reach."
 },
 {
 "name": "Hunt the Weak",
@@ -3538,7 +3535,7 @@
 "scry": 1
 }
 },
-"rulesText": "Each other creature you control that’s a Mutant or a Xeno has mutate.\nMutate (When this creature dies, reveal cards from the top of your library until you reveal a creature card that costs less. Put that card onto the battlefield and the rest on the bottom of your library in a random order.)"
+"rulesText": "Whenever Kushak Research Council or another Mutant or Xeno you control dies, put a +1/+1 counter on each creature you control that’s a Mutant or a Xeno."
 },
 {
 "name": "Lifestrider",

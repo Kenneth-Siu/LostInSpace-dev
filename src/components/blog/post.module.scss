@@ -4,7 +4,7 @@
 .post {
     line-height: 1.4;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 
     .postHeader {
         color: $color-1-light;
@@ -80,6 +80,10 @@
                 position: relative;
                 left: 50%;
                 transform: translateX(-50%);
+            }
+
+            ul {
+                list-style: disc;
             }
         }
     }
