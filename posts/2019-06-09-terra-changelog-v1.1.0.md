@@ -1,6 +1,6 @@
-# Terra Changelog v1.0.1
+# Terra Changelog v1.1.0
 
-## In this patch
+## In this update
 
 - Infiltrate/arm color pie adjustments — testing proved even a small amount of overlap is too easily assembled; infiltrate is no longer in white and arm is no longer in black.
 - Teleport adjusted in blue and red to make it easier to happen, but in black and green adjusted to make it more difficult.
