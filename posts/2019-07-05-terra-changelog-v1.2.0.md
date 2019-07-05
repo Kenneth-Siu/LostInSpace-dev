@@ -1,6 +1,6 @@
 # Terra Changelog v1.2.0
 
-## In this patch
+## In this update
 
 - Scry no longer has reminder text.
 - Creatures that enter the battlefield and arm themselves changed to just enter the battlefield armed instead of having a trigger. This should make rules more intuitive on the results of arming when the target is removed in response.
