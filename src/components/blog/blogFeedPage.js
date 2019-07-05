@@ -7,7 +7,7 @@ export default function BlogFeedPage({ pageContext }) {
     const posts = pageContext.posts;
 
     return (
-        <Layout pageTitle={"Test"} thin>
+        <Layout pageTitle={"Blog"} thin>
             <div className={styles.feed}>
                 {posts.map(post => (
                     <Post post={post} />

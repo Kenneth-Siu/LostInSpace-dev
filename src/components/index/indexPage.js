@@ -16,8 +16,8 @@ export default function IndexPage() {
                 <Tile
                     to="/blog/"
                     image={<BlogSplash />}
-                    name="The Toolbox"
-                    description="Add some new tools to your mental toolbox, or maybe sharpen ones you already have. Every Thursday, find a new post on game theory, strategy, or design."
+                    name="Blog"
+                    description="Add some new tricks to your toolbox. Find articles on game theory, strategy, and design."
                 />
                 <Tile
                     to="/terra/"
