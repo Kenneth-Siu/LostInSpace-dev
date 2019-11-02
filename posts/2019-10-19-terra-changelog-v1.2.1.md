@@ -11,6 +11,7 @@
 - **Police Badge** made more straightforward +1/+0 → +1/+1.
 - Malfunction renamed to **Breakdown** and cost changed 3U → 1UU.
 - **Cloud Darter** text made a little more terse.
+- **Solar Power Transmitters** is cheaper to use but taps.
 - **Back to Work** teleport cost increased 3B → 3BB.
 - **Rumormonger** power/toughness swapped 2/3 → 3/2.
 - **Shadowlight Strider** reworked to be cheaper, bigger, but have a higher teleport cost.
