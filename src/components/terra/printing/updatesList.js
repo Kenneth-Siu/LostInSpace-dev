@@ -1,11 +1,17 @@
 import { withPrefix } from 'gatsby';
 
 const updatesList = [
+    "Amlich Consulting",
     "Bring to Justice",
+    "Diplomats Prerogative",
     "Head Detective",
     "Mongrel Companion",
+    "Police Badge",
     "Rangor Watchmen",
+    "Reconnaisance Mule",
     "Undercover Agent",
+    "Breakdown",
+    "Cloud Darter",
     "Engine Welder",
     "Exiled Xenologist",
     "Future Insight",
@@ -18,18 +24,33 @@ const updatesList = [
     "Mindmeld Torturer",
     "Neural Devourer",
     "Punitive Counterstrike",
+    "Robertson Consortium",
+    "Rumormonger",
+    "Shadowlight Strider",
     "Urban Revenant",
+    "Alpha Squad Captain",
     "Battle Flow",
     "Frantic Investigator",
+    "Hong Wai Constructions",
     "Iridium Throwing Knife",
     "Leave Behind",
+    "Scavenged X17",
     "Mindmeld Battlesuit",
+    "Ohmwrecker",
+    "Rangor Contractor",
     "Rip Space-Time",
     "Rocket Salvo",
     "Take Hostage",
     "Escaped Test Subject",
     "Growth Genetics",
-    "Kushak Research Council"
+    "Kushak RD",
+    "Kushak Research Council",
+    "Ultramagnetic Interference",
+    "Thousand Spares",
+    "Ingolf the Catalyst",
+    "Representative Vuissance",
+    "Matter Distributor Alpha",
+    "Trojan Horse"
 ];
 
 export default updatesList.map(cardName => withPrefix(`/card-images/${cardName}.png`));
