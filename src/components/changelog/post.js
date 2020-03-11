@@ -27,7 +27,7 @@ export default function Post({ post }) {
             </div>
             <div className={styles.postBody}>
                 <h1 id={post.slug}>
-                    <Link to={`/blog/${post.slug}/`}>{post.title}</Link>
+                    <Link to={`/changelog/${post.slug}/`}>{post.title}</Link>
                 </h1>
                 <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdownAsHtml }} />
             </div>
@@ -38,7 +38,7 @@ export default function Post({ post }) {
 function insertImages(html, images) {
     let htmlString = html;
     images.forEach(image => {
-        htmlString = htmlString.replace(`src="${image}"`, `src="${withPrefix(`/blog/${image}.png`)}"`);
+        htmlString = htmlString.replace(`src="${image}"`, `src="${withPrefix(`/changelog/${image}.png`)}"`);
     });
     return htmlString;
 }

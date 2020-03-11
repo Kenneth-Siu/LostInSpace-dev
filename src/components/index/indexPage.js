@@ -1,10 +1,10 @@
 import React from "react";
 import Layout from "../layout/layout";
 import Tile from "./tile";
-import BlogSplash from "../images/blogSplash";
+import ChangelogSplash from "../images/changelogSplash";
 import TerraSplash from "../images/terraSplash";
 // import EndlessWinterSplash from "../images/endlessWinterSplash";
-import FogsworthSplash from "../images/fogsworthSplash";
+// import FogsworthSplash from "../images/fogsworthSplash";
 // import MythmakersSplash from "../images/mythmakersSplash";
 // import CityBlocksSplash from "../images/cityBlocksSplash";
 import styles from "./indexPage.module.scss";
@@ -14,10 +14,10 @@ export default function IndexPage() {
         <Layout>
             <div className={styles.indexPage}>
                 <Tile
-                    to="/blog/"
-                    image={<BlogSplash />}
-                    name="Blog"
-                    description="Add some new tricks to your toolbox. Find articles on game theory, strategy, and design."
+                    to="/changelog/"
+                    image={<ChangelogSplash />}
+                    name="Changelogs"
+                    description="Changelogs for Terra 2170"
                 />
                 <Tile
                     to="/terra/"
@@ -31,13 +31,13 @@ export default function IndexPage() {
                     name="Endless Winter"
                     description="Crash-landed on the legendary planet Auriga, you must work together with your fellow shipmates to escape before the planet freezes over. A co-operative game for 1–4 players."
                 /> */}
-                <Tile
+                {/* <Tile
                     to="/"
                     image={<FogsworthSplash />}
                     name="The Great Billingsworth Manor Jumble Sale"
                     description="What better way for the rich and idle to pass time? A bluffing, deduction, and negotiation game for 3–6 players."
                     underConstruction
-                />
+                /> */}
                 {/* <Tile
                     to="/"
                     image={<MythmakersSplash />}

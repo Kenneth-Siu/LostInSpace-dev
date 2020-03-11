@@ -2,12 +2,12 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-export default function BlogSplash() {
+export default function ChangelogSplash() {
     return (
         <StaticQuery
             query={graphql`
                 query {
-                    placeholderImage: file(relativePath: { eq: "blogSplash.jpg" }) {
+                    placeholderImage: file(relativePath: { eq: "changelogSplash.jpg" }) {
                         childImageSharp {
                             fluid(maxHeight: 512, maxWidth: 512, cropFocus: CENTER) {
                                 ...GatsbyImageSharpFluid

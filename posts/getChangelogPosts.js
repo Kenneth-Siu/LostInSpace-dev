@@ -1,6 +1,6 @@
 const { readdirSync, readFileSync } = require("fs");
 
-exports.getBlogPosts = function() {
+exports.getChangelogPosts = function() {
     const files = readdirSync("./posts");
     const jsonFileNames = files.filter(fileName => fileName.endsWith(".json"));
 
